@@ -134,3 +134,10 @@ STATIC_URL = '/static/'
 STATIC_ROOT = Path(BASE_DIR).joinpath('staticfiles')
 STATICFILES_DIRS = (Path(BASE_DIR).joinpath('static'),)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'no-reply@weringroup.com'
+EMAIL_HOST_PASSWORD = 'Werin2019!!'
+EMAIL_USE_TLS = True

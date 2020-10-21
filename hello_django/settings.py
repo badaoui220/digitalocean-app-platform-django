@@ -140,6 +140,11 @@ STATIC_ROOT = Path(BASE_DIR).joinpath('staticfiles')
 STATICFILES_DIRS = (Path(BASE_DIR).joinpath('static'),)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+MEDIA_URL = "/fichiers/"
+MEDIA_ROOT = Path(BASE_DIR).joinpath('mediafiles')
+MEDIAFILES_DIRS = (Path(BASE_DIR).joinpath('fichiers'),)
+MEDIAFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587

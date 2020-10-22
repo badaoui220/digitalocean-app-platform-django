@@ -6,4 +6,5 @@ djangorestframework
 django-cors-headers
 PyPDF2
 django-filter
-django-storages
+boto3==1.14.47
+django-storages==1.9.1
